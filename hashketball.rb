@@ -141,17 +141,15 @@ def shoe_size(player_name)
   end
   player_hash[:shoe]
 end
-require 'pry'
+
 def team_colors(team_names)
   if game_hash[:home][:team_name] == team_names
     return game_hash[:home][:colors] 
   elsif game_hash[:away][:team_name] == team_names
     return game_hash[:away][:colors]
   end
-  binding.pry
 end
-  
-team_colors("Brooklyn Nets")  
+
   
   
   
