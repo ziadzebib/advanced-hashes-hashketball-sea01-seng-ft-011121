@@ -153,6 +153,7 @@ end
 def team_names
   return game_hash[:home][:team_name]
   return game_hash[:away][:team_name]
+end
   
   
   
