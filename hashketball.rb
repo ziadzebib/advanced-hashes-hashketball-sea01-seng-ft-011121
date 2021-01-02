@@ -144,7 +144,7 @@ end
 
 def team_colors(team_names)
   color_hash = game_hash[:home].find{ |test_name| test_name[:team_name] == team_names }
-  if team_name == nil
+  if team_names == nil
     color_hash = game_hash[:away].find{ |test_name| test_name[:team_name] == team_names }
   end
   color_hash[:colors]
