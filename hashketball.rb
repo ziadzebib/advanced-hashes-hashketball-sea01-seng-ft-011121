@@ -141,7 +141,7 @@ def shoe_size(player_name)
   end
   player_hash[:shoe]
 end
-
+require 'pry'
 def team_colors(team_names)
   color_hash = game_hash[:home].find{ |test_name| test_name[:team_name] == team_names }
   if color_hash == nil
