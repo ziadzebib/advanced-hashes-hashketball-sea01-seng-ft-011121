@@ -166,7 +166,12 @@ def player_numbers(in_team_name)
 end
 
 def player_stats(in_player_name)
-  
+  player_hash = game_hash[:home][:players].find{ |test_player| test_player[:player_name] == in_player_name }
+  if player_hash == nil
+     player_hash = game_hash[:away][:players].find{ |test_player| test_player[:player_name] == in_player_name }
+  end
+  player_hash
+end
   
   
   
