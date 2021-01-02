@@ -158,7 +158,7 @@ end
 def player_numbers(team_name)
   numbers_array = []
   if game_hash[:home][:team_name] == team_names
-    numbers_array = game_hash[:home][:players][:number] 
+    game_hash[:home][:players][:number].each 
   elsif game_hash[:away][:team_name] == team_names
     return game_hash[:away][:colors][:number]
   end
