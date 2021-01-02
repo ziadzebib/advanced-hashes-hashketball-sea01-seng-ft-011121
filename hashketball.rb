@@ -133,4 +133,12 @@ def num_points_scored(player_name)
   end
   player_hash[:points]
 end
+
+def shoe_size(player_name) 
+  player_hash = game_hash[:home][:players].find{ |test_player| test_player[:player_name] == player_name }
+  if player_hash == nil
+     player_hash = game_hash[:away][:players].find{ |test_player| test_player[:player_name] == player_name }
+  end
+  player_hash[:shoe]
+end
   
