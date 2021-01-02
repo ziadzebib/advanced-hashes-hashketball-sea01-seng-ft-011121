@@ -146,10 +146,9 @@ def team_colors(team_names)
   if game_hash[:home][:team_name] == team_names
     return game_hash[:home][:colors] 
   elsif game_hash[:away][:team_name] == team_names
-    return 
+    return game_hash[:away][:colors]
   end
   binding.pry
-  color_hash[:colors]
 end
   
 team_colors("Brooklyn Nets")  
