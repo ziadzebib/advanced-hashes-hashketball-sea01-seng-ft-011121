@@ -127,6 +127,7 @@ def game_hash
 end
 
 def num_points_scored 
+  points_per_name = 
   game_hash.each do |name, points|
     
   end  
