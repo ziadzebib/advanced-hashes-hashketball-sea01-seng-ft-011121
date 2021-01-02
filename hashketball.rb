@@ -142,3 +142,15 @@ def shoe_size(player_name)
   player_hash[:shoe]
 end
 
+def team_colors(team_name)
+  color_hash = game_hash[:home][:colors].find
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
