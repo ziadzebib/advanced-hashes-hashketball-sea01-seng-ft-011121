@@ -148,6 +148,7 @@ def team_colors(team_names)
     color_hash = game_hash[:away].find{ |test_name| test_name[:team_name] == team_names }
   end
   color_hash[:colors]
+binding.pry
 end
   
   
