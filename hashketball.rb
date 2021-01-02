@@ -158,9 +158,9 @@ end
 def player_numbers(team_name)
   numbers_array = []
   if game_hash[:home][:team_name] == team_names
-    game_hash[:home][:players][:number].each { |key, value| numbers_array << value } 
+    game_hash[:home][:players].each { |key, value| numbers_array << value } 
   elsif game_hash[:away][:team_name] == team_names
-    game_hash[:away][:players][:number].each { |key, value| numbers_array << value } 
+    game_hash[:away][:players].each { |key, value| numbers_array << value } 
   end
   return numbers_array
 end
