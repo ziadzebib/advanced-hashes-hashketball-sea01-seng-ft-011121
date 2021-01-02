@@ -144,7 +144,9 @@ end
 require 'pry'
 def team_colors(team_names)
   if game_hash[:home][:team_name] == team_names
-    return game_hash[:home][:colors]  
+    return game_hash[:home][:colors] 
+  elsif game_hash[:away][:team_name] == team_names
+    return 
   end
   binding.pry
   color_hash[:colors]
