@@ -128,7 +128,7 @@ end
 
 def num_points_scored(player_name) 
   points_per_name = 1000
-  game_hash.each do |name, points|
+  game_hash.find do |name, points|
     name.each do 
   end  
 end
